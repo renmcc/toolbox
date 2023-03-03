@@ -15,8 +15,8 @@ import (
 	"go.uber.org/zap/zapcore"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/infraboard/mcube/file"
-	"github.com/infraboard/mcube/path"
+	"github.com/renmcc/toolbox/file"
+	"github.com/renmcc/toolbox/path"
 )
 
 var (

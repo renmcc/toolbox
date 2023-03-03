@@ -8,10 +8,10 @@ import (
 {{ if $.EnableKeyauth -}}
 	"github.com/infraboard/keyauth/client/interceptor"
 {{- end }}
-	"github.com/infraboard/mcube/app"
-	"github.com/infraboard/mcube/grpc/middleware/recovery"
-	"github.com/infraboard/mcube/logger"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/app"
+	"github.com/renmcc/toolbox/grpc/middleware/recovery"
+	"github.com/renmcc/toolbox/logger"
+	"github.com/renmcc/toolbox/logger/zap"
 
 	"{{.PKG}}/conf"
 )

@@ -6,7 +6,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/infraboard/mcube/logger"
+	"github.com/renmcc/toolbox/logger"
 )
 
 // LogOption configures a Logger.

@@ -7,15 +7,15 @@ import (
 	"time"
 
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcube/logger"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/logger"
+	"github.com/renmcc/toolbox/logger/zap"
 	restfulspec "github.com/emicklei/go-restful-openapi/v2"
 {{ if $.EnableKeyauth -}}
 	"github.com/infraboard/keyauth/apps/endpoint"
-	httpb "github.com/infraboard/mcube/pb/http"
-	"github.com/infraboard/mcube/http/label"
+	httpb "github.com/renmcc/toolbox/pb/http"
+	"github.com/renmcc/toolbox/http/label"
 {{- end }}
-	"github.com/infraboard/mcube/app"
+	"github.com/renmcc/toolbox/app"
 
 	"{{.PKG}}/conf"
 	"{{.PKG}}/swagger"

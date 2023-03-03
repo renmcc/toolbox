@@ -3,13 +3,14 @@ package pager
 import (
 	"context"
 
-	"github.com/infraboard/mcube/flowcontrol/tokenbucket"
+	"github.com/renmcc/toolbox/flowcontrol/tokenbucket"
 )
 
 // 分页迭代器
-// for p.Next() {
-// 	p.Scan(ctx, dst);
-// }
+//
+//	for p.Next() {
+//		p.Scan(ctx, dst);
+//	}
 type Pager interface {
 	// 判断是否还有下一页
 	Next() bool

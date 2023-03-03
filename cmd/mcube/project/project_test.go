@@ -3,7 +3,7 @@ package project_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcube/cmd/mcube/project"
+	"github.com/renmcc/toolbox/cmd/mcube/project"
 	"github.com/stretchr/testify/assert"
 )
 

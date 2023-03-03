@@ -2,8 +2,8 @@ package api
 
 import (
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcube/app/health"
-	"github.com/infraboard/mcube/http/restful/response"
+	"github.com/renmcc/toolbox/app/health"
+	"github.com/renmcc/toolbox/http/restful/response"
 )
 
 func (h *handler) Check(r *restful.Request, w *restful.Response) {

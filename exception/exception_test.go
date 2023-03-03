@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/infraboard/mcube/exception"
+	"github.com/renmcc/toolbox/exception"
 )
 
 func TestNewNotFound(t *testing.T) {

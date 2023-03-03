@@ -1,7 +1,7 @@
 package generater
 
 import (
-	"github.com/infraboard/mcube/pb/http"
+	"github.com/renmcc/toolbox/pb/http"
 
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"google.golang.org/protobuf/proto"

@@ -9,14 +9,14 @@ import (
 	"syscall"
 
 	"github.com/spf13/cobra"
-	"github.com/infraboard/mcube/app"
+	"github.com/renmcc/toolbox/app"
 {{ if $.EnableCache -}}
-	"github.com/infraboard/mcube/cache"
-	"github.com/infraboard/mcube/cache/memory"
-	"github.com/infraboard/mcube/cache/redis"
+	"github.com/renmcc/toolbox/cache"
+	"github.com/renmcc/toolbox/cache/memory"
+	"github.com/renmcc/toolbox/cache/redis"
 {{- end }}
-	"github.com/infraboard/mcube/logger"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/logger"
+	"github.com/renmcc/toolbox/logger/zap"
 
 	"{{.PKG}}/conf"
 	"{{.PKG}}/protocol"

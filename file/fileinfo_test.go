@@ -1,3 +1,4 @@
+//go:build !windows && !openbsd
 // +build !windows,!openbsd
 
 // Test for openbsd are excluded here as info.GID() returns 0 instead of the actual value
@@ -14,7 +15,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/infraboard/mcube/file"
+	"github.com/renmcc/toolbox/file"
 )
 
 func TestStat(t *testing.T) {

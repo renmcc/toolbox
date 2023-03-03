@@ -8,8 +8,8 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/infraboard/mcube/http/response"
-	"github.com/infraboard/mcube/logger"
+	"github.com/renmcc/toolbox/http/response"
+	"github.com/renmcc/toolbox/logger"
 )
 
 // LoggerEntry is the structure passed to the template.

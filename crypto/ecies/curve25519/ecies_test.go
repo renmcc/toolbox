@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	ecies "github.com/infraboard/mcube/crypto/ecies/curve25519"
+	ecies "github.com/renmcc/toolbox/crypto/ecies/curve25519"
 )
 
 func TestEncrypt(t *testing.T) {

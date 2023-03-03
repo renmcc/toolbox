@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/infraboard/mcube/client/negotiator"
-	"github.com/infraboard/mcube/flowcontrol"
-	"github.com/infraboard/mcube/flowcontrol/tokenbucket"
-	"github.com/infraboard/mcube/logger"
+	"github.com/renmcc/toolbox/client/negotiator"
+	"github.com/renmcc/toolbox/flowcontrol"
+	"github.com/renmcc/toolbox/flowcontrol/tokenbucket"
+	"github.com/renmcc/toolbox/logger"
 )
 
 // NewRequest creates a new request helper object.

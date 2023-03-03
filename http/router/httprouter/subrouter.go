@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"path"
 
-	"github.com/infraboard/mcube/http/router"
-	httppb "github.com/infraboard/mcube/pb/http"
+	"github.com/renmcc/toolbox/http/router"
+	httppb "github.com/renmcc/toolbox/pb/http"
 )
 
 func newSubRouter(basePath string, root *httpRouter) *subRouter {

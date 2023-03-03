@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/infraboard/mcube/sqlbuilder"
+	"github.com/renmcc/toolbox/sqlbuilder"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,18 +6,18 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/infraboard/mcube/logger"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/logger"
+	"github.com/renmcc/toolbox/logger/zap"
 
 	"github.com/infraboard/keyauth/apps/endpoint"
 	"github.com/infraboard/keyauth/client/interceptor"
 
-	"github.com/infraboard/mcube/app"
-	"github.com/infraboard/mcube/http/middleware/accesslog"
-	"github.com/infraboard/mcube/http/middleware/cors"
-	"github.com/infraboard/mcube/http/middleware/recovery"
-	"github.com/infraboard/mcube/http/router"
-	"github.com/infraboard/mcube/http/router/httprouter"
+	"github.com/renmcc/toolbox/app"
+	"github.com/renmcc/toolbox/http/middleware/accesslog"
+	"github.com/renmcc/toolbox/http/middleware/cors"
+	"github.com/renmcc/toolbox/http/middleware/recovery"
+	"github.com/renmcc/toolbox/http/router"
+	"github.com/renmcc/toolbox/http/router/httprouter"
 
 	"{{.PKG}}/conf"
 	"{{.PKG}}/version"

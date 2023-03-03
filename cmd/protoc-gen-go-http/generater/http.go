@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	routerPackage = protogen.GoImportPath("github.com/infraboard/mcube/pb/http")
+	routerPackage = protogen.GoImportPath("github.com/renmcc/toolbox/pb/http")
 )
 
 // NewGenerater todo

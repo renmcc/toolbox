@@ -3,7 +3,7 @@ package cors
 import (
 	"net/http"
 
-	"github.com/infraboard/mcube/logger"
+	"github.com/renmcc/toolbox/logger"
 )
 
 // Options is a configuration container to setup the CORS middleware.

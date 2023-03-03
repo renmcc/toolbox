@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/infraboard/mcube/validator"
+	"github.com/renmcc/toolbox/validator"
 	"github.com/stretchr/testify/assert"
 )
 

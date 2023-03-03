@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/infraboard/mcube/logger"
+	"github.com/renmcc/toolbox/logger"
 )
 
 // Cors interface

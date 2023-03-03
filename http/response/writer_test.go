@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/infraboard/mcube/http/response"
+	"github.com/renmcc/toolbox/http/response"
 	"github.com/stretchr/testify/require"
 )
 

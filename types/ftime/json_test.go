@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/infraboard/mcube/types/ftime"
+	"github.com/renmcc/toolbox/types/ftime"
 	"github.com/stretchr/testify/assert"
 )
 

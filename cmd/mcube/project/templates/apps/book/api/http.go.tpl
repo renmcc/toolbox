@@ -1,13 +1,13 @@
 package api
 
 import (
-	"github.com/infraboard/mcube/http/label"
-	"github.com/infraboard/mcube/http/router"
-	"github.com/infraboard/mcube/logger"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/http/label"
+	"github.com/renmcc/toolbox/http/router"
+	"github.com/renmcc/toolbox/logger"
+	"github.com/renmcc/toolbox/logger/zap"
 
 	"{{.PKG}}/apps/book"
-	"github.com/infraboard/mcube/app"
+	"github.com/renmcc/toolbox/app"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/infraboard/mcube/http/label"
-	"github.com/infraboard/mcube/pb/http"
+	"github.com/renmcc/toolbox/http/label"
+	"github.com/renmcc/toolbox/pb/http"
 )
 
 func TestEntry(t *testing.T) {

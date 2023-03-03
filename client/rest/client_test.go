@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/infraboard/mcube/client/rest"
-	"github.com/infraboard/mcube/http/response"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/client/rest"
+	"github.com/renmcc/toolbox/http/response"
+	"github.com/renmcc/toolbox/logger/zap"
 )
 
 func TestClient(t *testing.T) {

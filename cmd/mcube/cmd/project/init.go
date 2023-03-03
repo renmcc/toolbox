@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/AlecAivazis/survey/v2/terminal"
-	"github.com/infraboard/mcube/cmd/mcube/project"
+	"github.com/renmcc/toolbox/cmd/mcube/project"
 )
 
 // InitCmd 初始化系统

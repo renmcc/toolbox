@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/infraboard/mcube/client/compressor"
-	"github.com/infraboard/mcube/client/negotiator"
-	"github.com/infraboard/mcube/logger"
+	"github.com/renmcc/toolbox/client/compressor"
+	"github.com/renmcc/toolbox/client/negotiator"
+	"github.com/renmcc/toolbox/logger"
 )
 
 func NewResponse(c *RESTClient) *Response {

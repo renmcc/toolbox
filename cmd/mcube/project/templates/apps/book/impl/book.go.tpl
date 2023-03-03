@@ -6,10 +6,10 @@ import (
 	"database/sql"
 {{- end }}
 
-	"github.com/infraboard/mcube/exception"
-	"github.com/infraboard/mcube/pb/request"
+	"github.com/renmcc/toolbox/exception"
+	"github.com/renmcc/toolbox/pb/request"
 {{ if $.EnableMySQL -}}
-	"github.com/infraboard/mcube/sqlbuilder"
+	"github.com/renmcc/toolbox/sqlbuilder"
 {{- end }}
 
 	"{{.PKG}}/apps/book"

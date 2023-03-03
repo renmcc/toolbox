@@ -7,7 +7,7 @@ import (
 	"{{.PKG}}/apps/book"
 
 {{ if $.EnableMongoDB -}}
-	"github.com/infraboard/mcube/exception"
+	"github.com/renmcc/toolbox/exception"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

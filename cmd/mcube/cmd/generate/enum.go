@@ -8,7 +8,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/infraboard/mcube/cmd/mcube/enum"
+	"github.com/renmcc/toolbox/cmd/mcube/enum"
 )
 
 // EnumCmd 枚举生成器

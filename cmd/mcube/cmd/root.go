@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/infraboard/mcube/cmd/mcube/cmd/generate"
-	"github.com/infraboard/mcube/cmd/mcube/cmd/project"
-	"github.com/infraboard/mcube/cmd/mcube/cmd/protobuf"
+	"github.com/renmcc/toolbox/cmd/mcube/cmd/generate"
+	"github.com/renmcc/toolbox/cmd/mcube/cmd/project"
+	"github.com/renmcc/toolbox/cmd/mcube/cmd/protobuf"
 )
 
 var vers bool

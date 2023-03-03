@@ -2,10 +2,10 @@ package api
 
 import (
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcube/app"
-	"github.com/infraboard/mcube/app/health"
-	"github.com/infraboard/mcube/logger"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/app"
+	"github.com/renmcc/toolbox/app/health"
+	"github.com/renmcc/toolbox/logger"
+	"github.com/renmcc/toolbox/logger/zap"
 
 	restfulspec "github.com/emicklei/go-restful-openapi/v2"
 	healthgrpc "google.golang.org/grpc/health/grpc_health_v1"

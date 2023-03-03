@@ -7,13 +7,13 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/infraboard/mcube/logger"
-	"github.com/infraboard/mcube/logger/zap"
+	"github.com/renmcc/toolbox/logger"
+	"github.com/renmcc/toolbox/logger/zap"
 {{ if $.EnableKeyauth -}}
 	"github.com/infraboard/keyauth/apps/endpoint"
 {{- end }}
-	"github.com/infraboard/mcube/app"
-	"github.com/infraboard/mcube/http/middleware/cors"
+	"github.com/renmcc/toolbox/app"
+	"github.com/renmcc/toolbox/http/middleware/cors"
 
 	"{{.PKG}}/conf"
 {{ if $.EnableKeyauth -}}

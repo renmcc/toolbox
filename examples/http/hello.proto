@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package mcube.example.hello;
-option go_package = "github.com/infraboard/mcube/examples/http";
+option go_package = "github.com/renmcc/toolbox/examples/http";
 
 import "pb/http/entry.proto";
 

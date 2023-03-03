@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcube/http/restful/accessor/yamlk8s"
+	"github.com/renmcc/toolbox/http/restful/accessor/yamlk8s"
 )
 
 type Book struct {

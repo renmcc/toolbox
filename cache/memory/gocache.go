@@ -8,7 +8,7 @@ import (
 
 	"github.com/bluele/gcache"
 
-	"github.com/infraboard/mcube/cache"
+	"github.com/renmcc/toolbox/cache"
 )
 
 // NewCache new an redis cache instance

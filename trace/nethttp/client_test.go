@@ -10,7 +10,7 @@ import (
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/infraboard/mcube/trace/nethttp"
+	"github.com/renmcc/toolbox/trace/nethttp"
 )
 
 func makeRequest(t *testing.T, url string, options ...nethttp.ClientOption) []*mocktracer.MockSpan {

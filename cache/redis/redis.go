@@ -8,8 +8,8 @@ import (
 
 	"github.com/go-redis/redis"
 
-	"github.com/infraboard/mcube/cache"
-	"github.com/infraboard/mcube/trace/tredis"
+	"github.com/renmcc/toolbox/cache"
+	"github.com/renmcc/toolbox/trace/tredis"
 )
 
 // NewCache new an redis cache instance

@@ -1,4 +1,4 @@
-module github.com/infraboard/mcube
+module github.com/renmcc/toolbox
 
 go 1.18
 

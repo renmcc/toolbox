@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	httppb "github.com/infraboard/mcube/pb/http"
+	httppb "github.com/renmcc/toolbox/pb/http"
 )
 
 // Entry 路由条目

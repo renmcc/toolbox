@@ -21,7 +21,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/infraboard/mcube/pb/example"
+	"github.com/renmcc/toolbox/pb/example"
 )
 
 type appkey struct {

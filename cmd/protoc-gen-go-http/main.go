@@ -7,7 +7,7 @@ import (
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/types/pluginpb"
 
-	"github.com/infraboard/mcube/cmd/protoc-gen-go-http/generater"
+	"github.com/renmcc/toolbox/cmd/protoc-gen-go-http/generater"
 )
 
 const version = "0.1.0"

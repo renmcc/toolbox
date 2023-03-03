@@ -2,7 +2,7 @@ package api
 
 import (
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcube/http/response"
+	"github.com/renmcc/toolbox/http/response"
 
 	"{{.PKG}}/apps/book"
 )
