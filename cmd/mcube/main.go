@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/renmcc/toolbox/cmd/mcube/cmd"
+	"github.com/renmcc/toolbox/cmd/toolbox/cmd"
 )
 
 func main() {

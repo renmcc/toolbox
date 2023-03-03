@@ -1,3 +1,4 @@
+//go:build go1.7
 // +build go1.7
 
 package nethttp
@@ -22,7 +23,7 @@ const (
 	RequestIDHeaderKey = "X-Request-Id"
 )
 
-const defaultComponentName = "mcube.client.trace"
+const defaultComponentName = "toolbox.client.trace"
 
 // Transport wraps a RoundTripper. If a request is being traced with
 // Tracer, Transport will inject the current span into the headers,
@@ -92,24 +93,24 @@ func ClientSpanObserver(f func(span opentracing.Span, r *http.Request)) ClientOp
 //
 // Example:
 //
-// 	func AskGoogle(ctx context.Context) error {
-// 		client := &http.Client{Transport: &nethttp.Transport{}}
-// 		req, err := http.NewRequest("GET", "http://google.com", nil)
-// 		if err != nil {
-// 			return err
-// 		}
-// 		req = req.WithContext(ctx) // extend existing trace, if any
+//	func AskGoogle(ctx context.Context) error {
+//		client := &http.Client{Transport: &nethttp.Transport{}}
+//		req, err := http.NewRequest("GET", "http://google.com", nil)
+//		if err != nil {
+//			return err
+//		}
+//		req = req.WithContext(ctx) // extend existing trace, if any
 //
-// 		req, ht := nethttp.TraceRequest(tracer, req)
-// 		defer ht.Finish()
+//		req, ht := nethttp.TraceRequest(tracer, req)
+//		defer ht.Finish()
 //
-// 		res, err := client.Do(req)
-// 		if err != nil {
-// 			return err
-// 		}
-// 		res.Body.Close()
-// 		return nil
-// 	}
+//		res, err := client.Do(req)
+//		if err != nil {
+//			return err
+//		}
+//		res.Body.Close()
+//		return nil
+//	}
 func TraceRequest(tr opentracing.Tracer, req *http.Request, options ...ClientOption) (*http.Request, *Tracer) {
 	opts := &clientOptions{
 		spanObserver: func(_ opentracing.Span, _ *http.Request) {},

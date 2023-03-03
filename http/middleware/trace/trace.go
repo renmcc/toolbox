@@ -16,7 +16,7 @@ const (
 	// RequestIDHeaderKey 补充的RequestID Header Key
 	RequestIDHeaderKey = "X-Request-Id"
 	// DefaultComponentName 默认组件名称
-	DefaultComponentName = "mcube.server.trace"
+	DefaultComponentName = "toolbox.server.trace"
 )
 
 // New 实例

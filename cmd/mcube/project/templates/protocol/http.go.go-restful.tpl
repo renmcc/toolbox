@@ -11,7 +11,7 @@ import (
 	"github.com/renmcc/toolbox/logger/zap"
 	restfulspec "github.com/emicklei/go-restful-openapi/v2"
 {{ if $.EnableKeyauth -}}
-	"github.com/infraboard/keyauth/apps/endpoint"
+	"github.com/renmcc/keyauth/apps/endpoint"
 	httpb "github.com/renmcc/toolbox/pb/http"
 	"github.com/renmcc/toolbox/http/label"
 {{- end }}

@@ -14,8 +14,8 @@
 .idea
 *.log
 
-mcube-demo
-.mcube.yaml
+toolbox-demo
+.toolbox.yaml
 
 coverage.txt
 build

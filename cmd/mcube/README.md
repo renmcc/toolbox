@@ -1,3 +1,3 @@
-# mcube
+# toolbox
 
-mcube 脚手架工具, 用于项目的初始化
+toolbox 脚手架工具, 用于项目的初始化

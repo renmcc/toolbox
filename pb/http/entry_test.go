@@ -12,7 +12,7 @@ import (
 func TestEntry(t *testing.T) {
 	should := assert.New(t)
 
-	e := http.NewEntry("/mcube/v1/", "GET", "Monkey")
+	e := http.NewEntry("/toolbox/v1/", "GET", "Monkey")
 	e.EnableAuth()
 	e.EnablePermission()
 	e.AddLabel(label.Get)

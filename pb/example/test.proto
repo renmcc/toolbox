@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package infraboard.mcube.example;
+package renmcc.toolbox.example;
 option go_package = "github.com/renmcc/toolbox/pb/example";
 
 enum FOO {

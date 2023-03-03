@@ -73,8 +73,8 @@ help                           Display this help screen
 # 创建protobuf文件目录
 $ make -pv /usr/local/include/github.com/renmcc/toolbox/pb
 
-# 找到最新的mcube protobuf文件
-$ ls `go env GOPATH`/pkg/mod/github.com/infraboard/
+# 找到最新的toolbox protobuf文件
+$ ls `go env GOPATH`/pkg/mod/github.com/renmcc/
 
 # 复制到/usr/local/include
 $ cp -rf pb  /usr/local/include/github.com/renmcc/toolbox/pb

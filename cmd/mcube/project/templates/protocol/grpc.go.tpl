@@ -6,7 +6,7 @@ import (
 	"google.golang.org/grpc"
 
 {{ if $.EnableKeyauth -}}
-	"github.com/infraboard/keyauth/client/interceptor"
+	"github.com/renmcc/keyauth/client/interceptor"
 {{- end }}
 	"github.com/renmcc/toolbox/app"
 	"github.com/renmcc/toolbox/grpc/middleware/recovery"

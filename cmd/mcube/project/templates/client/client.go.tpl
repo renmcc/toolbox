@@ -1,7 +1,7 @@
 package client
 
 import (
-	kc "github.com/infraboard/keyauth/client"
+	kc "github.com/renmcc/keyauth/client"
 	"github.com/renmcc/toolbox/logger"
 	"github.com/renmcc/toolbox/logger/zap"
 	"google.golang.org/grpc"

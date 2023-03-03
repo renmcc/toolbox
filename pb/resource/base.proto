@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package infraboard.mcube.resource;
+package renmcc.toolbox.resource;
 option go_package = "github.com/renmcc/toolbox/pb/resource";
 
 enum VISIABLE_MODE {

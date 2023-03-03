@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package infraboard.mcube.http;
+package renmcc.toolbox.http;
 
 option go_package = "github.com/renmcc/toolbox/pb/http";
 option java_package = "com.google.protobuf";

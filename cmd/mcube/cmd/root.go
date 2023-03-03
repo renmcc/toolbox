@@ -6,18 +6,18 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/renmcc/toolbox/cmd/mcube/cmd/generate"
-	"github.com/renmcc/toolbox/cmd/mcube/cmd/project"
-	"github.com/renmcc/toolbox/cmd/mcube/cmd/protobuf"
+	"github.com/renmcc/toolbox/cmd/toolbox/cmd/generate"
+	"github.com/renmcc/toolbox/cmd/toolbox/cmd/project"
+	"github.com/renmcc/toolbox/cmd/toolbox/cmd/protobuf"
 )
 
 var vers bool
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
-	Use:   "mcube",
-	Short: "mcube 分布式服务构建工具",
-	Long:  `mcube 分布式服务构建工具`,
+	Use:   "toolbox",
+	Short: "toolbox 分布式服务构建工具",
+	Long:  `toolbox 分布式服务构建工具`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		return cmd.Help()
 	},
@@ -34,5 +34,5 @@ func Execute() {
 
 func init() {
 	RootCmd.AddCommand(project.Cmd, generate.Cmd, protobuf.Cmd)
-	RootCmd.PersistentFlags().BoolVarP(&vers, "version", "v", false, "the mcube version")
+	RootCmd.PersistentFlags().BoolVarP(&vers, "version", "v", false, "the toolbox version")
 }

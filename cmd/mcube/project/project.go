@@ -24,7 +24,7 @@ import (
 //go:embed templates/*
 var templates embed.FS
 
-const PROJECT_SETTING_FILE_PATH = ".mcube.yaml"
+const PROJECT_SETTING_FILE_PATH = ".toolbox.yaml"
 
 // LoadConfigFromCLI 配置
 func LoadConfigFromCLI() (*Project, error) {
@@ -38,7 +38,7 @@ func LoadConfigFromCLI() (*Project, error) {
 	err := survey.AskOne(
 		&survey.Input{
 			Message: "请输入项目包名称:",
-			Default: "gitee.com/go-course/mcube-demo",
+			Default: "gitee.com/go-course/toolbox-demo",
 		},
 		&p.PKG,
 		survey.WithValidator(survey.Required),

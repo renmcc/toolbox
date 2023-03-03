@@ -9,8 +9,8 @@ import (
 	"github.com/renmcc/toolbox/logger"
 	"github.com/renmcc/toolbox/logger/zap"
 
-	"github.com/infraboard/keyauth/apps/endpoint"
-	"github.com/infraboard/keyauth/client/interceptor"
+	"github.com/renmcc/keyauth/apps/endpoint"
+	"github.com/renmcc/keyauth/client/interceptor"
 
 	"github.com/renmcc/toolbox/app"
 	"github.com/renmcc/toolbox/http/middleware/accesslog"

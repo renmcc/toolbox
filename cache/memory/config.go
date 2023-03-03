@@ -12,8 +12,8 @@ func NewDefaultConfig() *Config {
 
 // Config 配置选项
 type Config struct {
-	TTL  int `json:"ttl,omitempty" yaml:"ttl" toml:"ttl" env:"MCUBE_CACHE_TTL"` // 默认秒
-	Size int `json:"size,omitempty" yaml:"size" toml:"size" env:"MCUBE_CACHE_SIZE"`
+	TTL  int `json:"ttl,omitempty" yaml:"ttl" toml:"ttl" env:"toolbox_CACHE_TTL"` // 默认秒
+	Size int `json:"size,omitempty" yaml:"size" toml:"size" env:"toolbox_CACHE_SIZE"`
 }
 
 func (c *Config) GetTTL() time.Duration {

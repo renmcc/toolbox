@@ -91,7 +91,7 @@ func (s *accessLogTestSuit) Test_LoggerCustomFormat() func(t *testing.T) {
 		recorder := httptest.NewRecorder()
 
 		s.lm.SetFormat("{{.Request.URL.Query.Get \"foo\"}} {{.Request.UserAgent}} - {{.Status}}")
-		userAgent := "mcube-test"
+		userAgent := "toolbox-test"
 		req, err := http.NewRequest("GET", "http://localhost:3000/?foo=bar", nil)
 		should.NoError(err)
 		req.Header.Set("User-Agent", userAgent)

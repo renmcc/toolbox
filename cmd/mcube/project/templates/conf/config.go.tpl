@@ -12,7 +12,7 @@ import (
 {{- end }}
 
 {{ if $.EnableKeyauth -}}
-	kc "github.com/infraboard/keyauth/client"
+	kc "github.com/renmcc/keyauth/client"
 {{- end }}
 
 {{ if $.EnableCache -}}

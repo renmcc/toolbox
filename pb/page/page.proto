@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package infraboard.mcube.page;
+package renmcc.toolbox.page;
 option go_package = "github.com/renmcc/toolbox/http/request";
 
 message PageRequest {

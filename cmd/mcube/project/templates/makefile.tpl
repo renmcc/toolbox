@@ -7,9 +7,9 @@ MOD_DIR := $(shell go env GOPATH)/pkg/mod
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/ | grep -v redis)
 GO_FILES := $(shell find . -name '*.go' | grep -v /vendor/ | grep -v _test.go)
 
-MCUBE_MODULE := "github.com/renmcc/toolbox"
-MCUBE_VERSION :=$(shell go list -m ${MCUBE_MODULE} | cut -d' ' -f2)
-MCUBE_PKG_PATH := ${MOD_DIR}/${MCUBE_MODULE}@${MCUBE_VERSION}
+toolbox_MODULE := "github.com/renmcc/toolbox"
+toolbox_VERSION :=$(shell go list -m ${toolbox_MODULE} | cut -d' ' -f2)
+toolbox_PKG_PATH := ${MOD_DIR}/${toolbox_MODULE}@${toolbox_VERSION}
 
 BUILD_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 BUILD_COMMIT := ${shell git rev-parse HEAD}
@@ -54,14 +54,14 @@ clean: ## Remove previous build
 	@rm -f dist/${PROJECT_NAME}
 
 install: ## Install depence go package
-	@go install github.com/renmcc/toolbox/cmd/mcube@latest
+	@go install github.com/renmcc/toolbox/cmd/toolbox@latest
 	@go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 	@go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 	@go install github.com/favadi/protoc-go-inject-tag@latest
 
-pb: ## Copy mcube protobuf files to common/pb
+pb: ## Copy toolbox protobuf files to common/pb
 	@mkdir -pv common/pb/github.com/renmcc/toolbox/pb
-	@cp -r ${MCUBE_PKG_PATH}/pb/* common/pb/github.com/renmcc/toolbox/pb
+	@cp -r ${toolbox_PKG_PATH}/pb/* common/pb/github.com/renmcc/toolbox/pb
 	@sudo rm -rf common/pb/github.com/renmcc/toolbox/pb/*/*.go
 
 gen: ## Init Service
@@ -69,7 +69,7 @@ gen: ## Init Service
 	@go fmt ./...
 {{ if $.GenExample }}
 	@protoc-go-inject-tag -input=apps/*/*.pb.go
-	@mcube generate enum -p -m apps/*/*.pb.go
+	@toolbox generate enum -p -m apps/*/*.pb.go
 {{ end }}
 
 help: ## Display this help screen

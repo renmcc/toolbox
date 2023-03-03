@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package mcube.example.hello;
+package toolbox.example.hello;
 option go_package = "github.com/renmcc/toolbox/examples/http";
 
 import "pb/http/entry.proto";
@@ -12,7 +12,7 @@ message String {
 service HelloService {
 	rpc Hello (String) returns (String);
 	rpc Hello2 (String) returns (String) {
-		option (mcube.http.rest_api) = {
+		option (toolbox.http.rest_api) = {
 			path: "/hello/:value"
 			method: "GET"
 			resource: "Hello"

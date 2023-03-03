@@ -20,19 +20,19 @@
 
 ## 快速上手
 
-首先你需要安装mcube, 所有的功能都集成到这个CLI工具上了
+首先你需要安装toolbox, 所有的功能都集成到这个CLI工具上了
 ```sh
-$ go install github.com/renmcc/toolbox/cmd/mcube 
+$ go install github.com/renmcc/toolbox/cmd/toolbox 
 ```
 
 按照完成后, 通过help指令查看基本使用方法
 ```
-$ mcube -h
-mcube ...
+$ toolbox -h
+toolbox ...
 
 Usage:
-  mcube [flags]
-  mcube [command]
+  toolbox [flags]
+  toolbox [command]
 
 Available Commands:
   enum        枚举生成器
@@ -40,17 +40,17 @@ Available Commands:
   init        初始化
 
 Flags:
-  -h, --help      help for mcube
-  -v, --version   the mcube version
+  -h, --help      help for toolbox
+  -v, --version   the toolbox version
 
-Use "mcube [command] --help" for more information about a command.
+Use "toolbox [command] --help" for more information about a command.
 ```
 
-mcube提供项目初始化能力, 利用mcube提供的工具箱, 快速组装出一个接近生产级别的应用(使用请看README):
+toolbox提供项目初始化能力, 利用toolbox提供的工具箱, 快速组装出一个接近生产级别的应用(使用请看README):
 ```sh
 $ mkdir demo && cd demo
-$ mcube init
-? 请输入项目包名称: github.com/infraboard/demo
+$ toolbox init
+? 请输入项目包名称: github.com/renmcc/demo
 ? 请输入项目描述: 项目描述,会生成到CLI和READMD.md中
 项目初始化完成, 项目结构如下: 
 ├───.gitignore (269b)
@@ -97,15 +97,15 @@ Go Version:
 
 ## 解放双手
 
-对于一些可能标准化的代码模块, mcube已经为你准备好了生成器, 用于提升效率
+对于一些可能标准化的代码模块, toolbox已经为你准备好了生成器, 用于提升效率
 
 
 
 + 枚举生成器
 
-安装好mcube好后, 编写好基本的枚举, 然后生成器会提取这些信息, 生成序列化方法
+安装好toolbox好后, 编写好基本的枚举, 然后生成器会提取这些信息, 生成序列化方法
 ```
-//go:generate  mcube enum -m
+//go:generate  toolbox enum -m
 package enum_test
 
 const (

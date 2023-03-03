@@ -1,5 +1,6 @@
-//go:generate  mcube enum -m
 // Package enum_test for test
+//
+//go:generate  toolbox enum -m
 package enum_test
 
 const (

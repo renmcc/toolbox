@@ -1,7 +1,7 @@
-MCUBE_MAIN := "cmd/mcube/main.go"
+toolbox_MAIN := "cmd/toolbox/main.go"
 PROTOC_GEN_GO_HTTP_MAIN = "cmd/protoc-gen-go-http/main.go"
-PROJECT_NAME := "mcube"
-PKG := "github.com/infraboard/$(PROJECT_NAME)"
+PROJECT_NAME := "toolbox"
+PKG := "github.com/renmcc/$(PROJECT_NAME)"
 MOD_DIR := $(shell go env GOMODCACHE)
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/ | grep -v redis | grep -v broker | grep -v etcd | grep -v examples)
 GO_FILES := $(shell find . -name '*.go' | grep -v /vendor/ | grep -v _test.go)
@@ -21,8 +21,8 @@ dep: ## Get the dependencies
 lint: ## Lint Golang files
 	@golint -set_exit_status ${PKG_LIST}
 
-install: ## install mcube cli
-	@go install ${PKG}/cmd/mcube
+install: ## install toolbox cli
+	@go install ${PKG}/cmd/toolbox
 
 vet: ## Run go vet
 	@go vet ${PKG_LIST}
@@ -38,14 +38,14 @@ test-hg:  ## test http gen
 	@protoc -I=. -I=${GOPATH}/src --go-http_out=. examples/http/hello.proto --go-http_opt=module="github.com/renmcc/toolbox"
 
 build: dep ## Build the binary file
-	@go build -o build/$(PROJECT_NAME) $(MCUBE_MAIN)
+	@go build -o build/$(PROJECT_NAME) $(toolbox_MAIN)
 
 clean: ## Remove previous build
 	@rm -f build/*
 
 gen: # Generate code
 	@protoc -I=. -I=/usr/local/include --go_out=. --go_opt=module=${PKG} pb/*/*.proto
-	@mcube generate enum -p -m pb/*/*.pb.go
+	@toolbox generate enum -p -m pb/*/*.pb.go
 	
 help: ## Display this help screen
 	@grep -h -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

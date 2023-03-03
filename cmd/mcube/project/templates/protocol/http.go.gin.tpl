@@ -10,7 +10,7 @@ import (
 	"github.com/renmcc/toolbox/logger"
 	"github.com/renmcc/toolbox/logger/zap"
 {{ if $.EnableKeyauth -}}
-	"github.com/infraboard/keyauth/apps/endpoint"
+	"github.com/renmcc/keyauth/apps/endpoint"
 {{- end }}
 	"github.com/renmcc/toolbox/app"
 	"github.com/renmcc/toolbox/http/middleware/cors"

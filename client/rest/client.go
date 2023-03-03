@@ -118,7 +118,7 @@ func (c *RESTClient) SetContentType(contentType string) {
 //
 // To set the header for username "go-resty" and password "welcome"
 //
-//	client.SetBasicAuth("mcube", "welcome")
+//	client.SetBasicAuth("toolbox", "welcome")
 //
 // This method overrides the credentials set by method `Client.SetBasicAuth`.
 func (c *RESTClient) SetBasicAuth(username, password string) *RESTClient {
